@@ -1,0 +1,28 @@
+.container {
+  max-width: 120rem; //120 rem when enough space, when viewport is less than 120rem, it will occupy 100%
+  margin: 8rem auto; //center horizontally, 8rem space vertically
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 56rem;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 18%; //don't grow, don't shring, always keep 18% of parent container width
+  background-color: var(--color-grey-dark-1);
+}
+
+.hotel-view {
+  flex: 1; //grow as much as it can (occupy all available space)
+  background-color: #fff;
+}
